@@ -23,11 +23,12 @@ nav {
 }
 
 .text {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1em;
+    width: 60%;
 }
 
+.icons{
+    width: 30%;
+}
 .card {
     padding: 20px;
     border: 1px solid #ccc;
@@ -47,53 +48,70 @@ nav {
     padding: 30px 30px 30px 50px;
 }
 
-/* .button1{
-    justify-content: center;
-    align-items: center;
-    padding-left: 10%;
-} */
 
 .card {
-    display: flex;
+    flex: 0 0 30%;
     flex-direction: column;
     gap: 0.5em;
     width: 30%;
     justify-content: start;
     background-color: transparent;
+    border: none;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 .card .card-header {
     background-color: navy;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 95%;
-    height: 150px;
+    flex-direction: column;
+    width: 424px;
+    height: 168px;
+    margin: 20px 0px -25px 0px;
+    padding:  20px 0px 0px 24px;
+    text-align: start;
 }
 
 .card .card-body {
     display: flex;
     flex-wrap: nowrap;
-    text-align: start;
-    padding: 10px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    
+   
 }
 
 button {
     background: blue;
     border: 2px solid;
     font: inherit;
-    margin: 10px 0px 0px 20px;
-    padding: 5px 0px 0px 5px;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 5px 0px 4px;
     color: #fff;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     justify-items: center;
     font-size: 11px;
-    width: 17em;
-    
+    width: 300em;
+    text-align: start;
+    gap: 0.5em;
 }
 
 button p {
     display: inline;
     margin-left: 20px;
+    text-align: end;
+    padding: 0px 0px 0px 20px;
+    flex-wrap: nowrap;
+}
+
+.passage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 110px;
 }
