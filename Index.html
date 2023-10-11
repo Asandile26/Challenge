@@ -1,78 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
-    <nav>
-        <div class="logo"><h1>Don Nator</h1></div>
-        <div class="nav"></div>
-    </nav>
-    <div class="blue"><p>LOOK BEYOND THE ORDINARY</p></div>
-    <div class="black"></div>
-    <div class="slider">
-  <a href="#" class="control_next">></a> 
-  <a href="#" class="control_prev"><</a> 
-  <div class="images">
-      <ul>
-          <li><img src="https://i.postimg.cc/QxYTf11P/F7-HRkn4-WAAAp48-O.jpg" alt="banner" class="active"></li>
-          <li><img src="https://i.postimg.cc/Hs869zVd/alan-scales-1-WMZARl81c-unsplash.jpg" alt="slider2"></li>
-          <li><img src="https://i.postimg.cc/B66w2Grn/jade-stephens-Wh-VO1x-Ki-DVw-unsplash.jpg" alt="slider3"></li>
-          <li><img src="https://i.postimg.cc/sgJrcsNY/rhondak-native-florida-folk-artist-Yc7-Otf-Fn-0-unsplash.jpg" alt="slider4"></li>
-        </ul>  
-  </div>
-
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Don Nator</h1>
+            </div>
+            <div class="nav"><i class="fa fa-bars"></i>
+                </label></div>
+        </nav>
+        <div class="box">
+            <div class="blue">
+                <p>LOOK BEYOND THE ORDINARY</p>
+            </div>
+            <div class="black"></div>
+        </div>
+        <div class="slider">
+            <a href="#" class="control_next">></a>
+            <a href="#" class="control_prev"><</a>
+                    <div class="images">
+                        <ul>
+                            <li><img src="https://i.postimg.cc/QxYTf11P/F7-HRkn4-WAAAp48-O.jpg" alt="banner" class="active">
+                            </li>
+                            <li><img src="https://i.postimg.cc/Hs869zVd/alan-scales-1-WMZARl81c-unsplash.jpg" alt="slider2">
+                            </li>
+                            <li><img src="https://i.postimg.cc/B66w2Grn/jade-stephens-Wh-VO1x-Ki-DVw-unsplash.jpg"
+                                    alt="slider3"></li>
+                            <li><img src="https://i.postimg.cc/sgJrcsNY/rhondak-native-florida-folk-artist-Yc7-Otf-Fn-0-unsplash.jpg"
+                                    alt="slider4"></li>
+                        </ul>
+                    </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="passage">
+            <div class="text">
+                <p>Visio is an investment management firm initially founded by Patrick Moyal in 2003. <br> The nimble highly
+                    focused and dynamic team manage assets across listed
+                    <br> strategies for a diversified client base that includes some of the world's largest and <br> most
+                    sophisticated investors
+                </p>
+            </div>
+    
+            <div class="icons">
+                <p>&minus; &nbsp; &#41; &nbsp; &gt; &nbsp; &#92; &nbsp; <span class="down">&nbsp; &#41;</span> | <span
+                        class="upwards">&#41;</span></p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="icon">&gt;</h1> <br>
+                    <h1>THE VISIO <br> DIFFERENCE</h1>
+                </div>
+                <div class="card-body">
+                    <button>HEDGE FUND <span class="arrow">&gt;</span></button>
+                    <button>UNITS TRUSTS <span class="arrow">&gt;</span></button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="icon">&gt;</h1> <br>
+                    <h1>MEET THE <br> VISIO TEAM</h1>
+                </div>
+                <div class="card-body">
+                    <button>SEGREGATED MANDATES <span class="arrow">&gt;</span></button>
+                    <button>AFRICA FUNDS <span class="arrow">&gt;</span></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="icon">&gt;</h1><br>
+                    <h1>OUR FUNDS AND <br> INVESTMENTS</h1>
+                </div>
+                <div class="card-body">
+                    <button>FUND PERFORMANCE <span class="arrow">&gt;</span></button>
+                    <button>RISK MANAGEMENT <span class="arrow">&gt;</span></button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="passage">
-        <div class="text">
-            <p>Visio is an investment management firm initially founded by Patrick Moyal in 2003. <br> The nimble highly focused and dynamic team manage assets across listed 
-                <br> strategies for a diversified client base that includes some of the world's largest and <br> most sophisticated investors</p>
-        </div>
-
-        <div class="icons">
-            <p>&minus; &nbsp; &#41; &nbsp; &gt; &nbsp; &#92; &nbsp; <span class="down">&nbsp; &#41;</span> | <span class="upwards">&#41;</span></p>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <div class="card-header">
-                <h1 class="icon">&gt;</h1> <br>
-                <h1>THE VISIO <br> DIFFERENCE</h1>
-            </div>
-            <div class="card-body">
-                <button>HEDGE FUND <span class="arrow">&gt;</span></button>
-                <button>UNITS TRUSTS <span class="arrow">&gt;</span></button>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="card-header">
-                <h1 class="icon">&gt;</h1> <br>
-                <h1>MEET THE <br> VISIO TEAM</h1>
-            </div>
-            <div class="card-body">
-                <button>SEGREGATED MANDATES <span class="arrow">&gt;</span></button>
-                <button>AFRICA FUNDS <span class="arrow">&gt;</span></button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-            <h1 class="icon">&gt;</h1><br>
-            <h1>OUR FUNDS AND <br> INVESTMENTS</h1>
-            </div>
-            <div class="card-body">
-                <button>FUND PERFORMANCE <span class="arrow">&gt;</span></button>
-                <button>RISK MANAGEMENT <span class="arrow">&gt;</span></button>
-            </div>
-        </div>
-    </div>
+    
 </body>
+
 </html>

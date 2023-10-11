@@ -2,33 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  
+  body {
     font-family: Arial, sans-serif;
      margin: 0;
     padding: 0;
-      
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-nav {
-    background-color: #333;
-    color: white;
+  nav {
+    color: #0F0F0F;
     padding: 1em;
-}
-
-.logo {
+  }
+  
+  
+  .logo {
     display: inline-block;
-}
-
-.text {
+  }
+  
+  
+  .text {
     width: 60%;
-}
-
-.icons{
-    width: 30%;
-}
-.card {
+    color: #bdc1c3;
+  }
+  
+  
+  .card {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 2px;
@@ -37,18 +43,18 @@ nav {
     width: 25%;
     justify-items: center;
     align-items: center;
-}
-.cards {
+  }
+  .cards {
     display: flex;
     width: 75vw;
     height: auto;
     padding: 30px 0px ;
     margin: 0px auto;
     gap: 15px;
-}
-
-
-.card {
+  }
+  
+  
+  .card {
     flex: 0 0 25%;
     flex-direction: column;
     gap: 0.1em;
@@ -59,35 +65,37 @@ nav {
     margin: 0px;
     padding: 0px;
     text-align: center;
-}
-
-.card .card-header {
-    background-color: #061C2C;
+  }
+  
+  
+  .card .card-header {
+    background-color: #061b2c;
     height: auto;
     flex-direction: column;
+    color: white;
     width: 350px;
     height: 150px;
     padding:  15px;
     text-align: start;
     font-size: 12px;
     font-weight: 500;
-}
-
-.card-header .icon {
+  }
+  
+  
+  .card-header .icon {
     font-size: 45px;
-}
-
-.card .card-body {
+  }
+  
+  .card .card-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 350px;
-    
-}
-
-
-button {
-    background: #1187db;
+  }
+  
+  
+  button {
+    background: #244ac0;
     border: 2px solid;
     margin: 10px 0px 0px 0px;
     color: #fff;
@@ -97,32 +105,34 @@ button {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-}
-.arrow {
+  }
+  .arrow {
     flex-wrap: nowrap;
     font-size: 12px;
     font-weight: bold;
-    color: #1C75A6;
-}
-
-.passage{
+    color: #2b71d9;
+  }
+  
+  
+  .passage{
     display: flex;
+    flex: wrap;
     align-items: center;
     padding: 0 110px ;
     margin: 70px 0px 40px;
-    margin-left: 75px;
-}
-
-.slider {
+  }
+  
+  .slider {
     position: relative;
     overflow: hidden;
-    margin: 30px 100px 30px 100px;
+    margin: 30px 10px 30px 10px;
     border-radius: 4px;
     z-index: 10;
+    padding: 0px 10px 0px 5px;
     perspective: 10px;
-}
+  }
   
-.slider ul {
+  .slider ul {
     position: relative;
     margin-left: 40px !important;
     padding: 0;
@@ -131,7 +141,8 @@ button {
     width: 80vw !important;
   }
   
-.slider ul li {
+  
+  .slider ul li {
     position: relative;
     display: block;
     float: left;
@@ -142,101 +153,107 @@ button {
     background: #ccc;
     text-align: center;
     line-height: 400px;
-}
-
-.images {
+  }
+  
+  
+  .images {
     position: relative;
     width: 100%;
     overflow: hidden;
     /* padding: 0 0 100px 0; */
-}
-
-.images ul {
-    display: flex; 
+  }
+  
+  
+  .images ul {
+    display: flex;
     transition: transform 0.5s ease-in-out;
-}
-
-.images ul li {
+  }
+  
+  .images ul li {
     flex: 0 0 100%;
     object-fit: cover;
     object-position: center;
     background-position: center;
     overflow: hidden;
-}
-
-.images img {
+  }
+  
+  .images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     background-position: center;
-    
-}
-
-a.control_prev, a.control_next {
+   
+  }
+  
+  a.control_prev, a.control_next {
     position: absolute;
-    top: 40%;
+    top: 30%;
     z-index: 999;
     display: block;
-    padding: 4% 3%;
+    padding: 4% 2%;
     width: auto;
     height: auto;
-    background: #2a2a2a;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 100px;
     opacity: 0.8;
     cursor: pointer;
-}
+  }
   
-a.control_prev:hover, a.control_next:hover {
+  
+  a.control_prev:hover, a.control_next:hover {
     opacity: 1;
     -webkit-transition: all 0.2s ease;
-}
+  }
   
-a.control_prev {
+  
+  a.control_prev {
     border-radius: 0 2px 2px 0;
     z-index: 1;
     margin-left: 40px;
-}
+  }
   
-a.control_next {
+  a.control_next {
     right: 0;
     border-radius: 2px 0 0 2px;
     z-index: 1;
-}
+  }
   
-.slider_option {
+  .slider_option {
     position: relative;
     margin: 10px auto;
     width: 160px;
     font-size: 18px;
-}
-
-.icons{
+  }
+  
+  
+  .icons{
+    display: inline-block;
+    width: 30%;
     font-size: 24px;
     margin:  0 0 36px 0;
-    color: #1C75A6;
-}
-
-.icons p{
+    color: #2646a9;
+  }
+  
+  .icons p{
     font-size: 36px;
-}
-
-.upwards {
+  }
+  
+  
+  .upwards {
     display: inline-block;
     transform: rotate(-90deg);
     height: 10px;
   }
   
-  
-.down{
+  .down{
       display: inline-block;
       transform: rotate(90deg);
-}
-
-.black {
+  }
+  
+  .black {
       position: absolute;
       top: 310px;
       left: 1300px;
@@ -246,7 +263,6 @@ a.control_next {
       font-size: 16px;
       cursor: pointer;
       border: none;
-      border-radius: 5px;
       margin: 5px;
       color: white;
       font-weight: bold;
@@ -255,16 +271,18 @@ a.control_next {
       height: 70px;
       z-index: 1;
     }
+  
+  
   .blue{
     position: absolute;
     top: 310px;
+    left: 0%;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    padding: 25px 0px 0px 120px;
+    padding: 25px 0px 0px 140px;
     color: white;
     width: 480px;
     background-color: #0802A3;
@@ -276,7 +294,208 @@ a.control_next {
     margin: 0px auto !important;
     padding: 0px 0px 0px 0px;
   }
-
-.icon{
+  
+  
+  
+  .icon{
     color: #1C75A6;
+  }
+  
+ 
+.slider {
+    position: relative;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    color: #bdc1c3;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdc1c3;
+}
+
+.dot {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px; 
+    cursor: pointer;
+    color: #bdc1c3;
+    background-color: #bdc1c3;
+}
+
+.dot.active {
+    background-color: #bdc1c3; 
+}
+
+  
+@media only screen and (width <= 768px) {
+  
+  
+    body {
+      font-size: 14px;
+    }
+  
+    nav {
+      padding: 0.5em;
+    }
+  
+  
+    .passage {
+      padding: 0 20px;
+      margin-left: 0;
+      flex-direction: column;
+    }
+    
+    .slider ul li{
+        width: 100%;
+    }
+
+    .slider ul{
+        width: 100%;
+    }
+
+    .icons {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+  
+    .cards {
+      flex-direction: column;
+      width: 85%;
+    }
+  
+  
+    .card {
+      width: 85%;
+      margin: 0px 5px 0 10px;
+    }
+  
+  
+    .slider {
+      width: 100% !important;
+      height: 250px !important;
+      margin: 10px 0px 20px 0px;
+    }
+  .images{
+    width: 100%
+  }
+  .images img{
+    width: 100%;
+  }
+  
+  .images ul{
+    width: 100% !important;
+  }
+
+  .images ul li{
+    width: 100%;
+  }
+
+    .blue, .black {
+      top: 25%;
+      width: 50%;
+      padding: 15px;
+    }
+  .black{
+    left: 90%;
+  }
+  
+    .blue p {
+      padding: 0;
+    }
+   
+    .card-body{
+      flex-direction: column;
+      width: 100%;
+      margin: 0px 5px 0px 5px;
+    }
+  
+  
+    .card-header{
+      flex-direction: column;
+      width: 100%;
+      padding: 0 20px 0 30px;
+      margin: 0px 5px 0px 5px;
+    }
+  
+  
+    button{
+      width: 100%;
+    }
+    button p{
+      padding: 0px 0px 0px 10px;
+    }
+
+    a.control_prev, a.control_next{
+        top: 20%; 
+    }
+  }
+  
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .nav {
+        padding: 0.5em;
+    }
+
+    .logo {
+        display: block; 
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+
+    .passage {
+        padding: 0 20px; 
+        margin: 40px 0;
+        margin-left: 0; 
+    }
+
+    .cards {
+        width: 100%; 
+        flex-wrap: wrap; 
+    }
+
+    .card {
+        width: 100%; 
+        flex: 0 0 100%;
+    }
+
+    .slider {
+        margin: 10px; 
+    }
+
+    .images ul {
+        margin-left: 0 !important; 
+        width: 100% !important;
+    }
+
+    .dots {
+        bottom: 5px; 
+    }
+
+    .dot {
+        margin: 0 3px; 
+    }
+
+    .black, .blue {
+        position: static; 
+        width: auto;
+        text-align: center;
+        margin: 10px 0; 
+    }
 }
